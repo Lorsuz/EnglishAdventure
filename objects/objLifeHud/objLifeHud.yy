@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_enemy",
-  "spriteId": {
-    "name": "sprEnemy",
-    "path": "sprites/sprEnemy/sprEnemy.yy",
-  },
+  "name": "objLifeHud",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
@@ -24,11 +21,13 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Items",
+    "path": "folders/Objects/Items.yy",
   },
 }

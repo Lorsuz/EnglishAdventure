@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_enemy",
+  "name": "objCollider",
   "spriteId": {
-    "name": "sprEnemy",
-    "path": "sprites/sprEnemy/sprEnemy.yy",
+    "name": "sprCollider",
+    "path": "sprites/sprCollider/sprCollider.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -28,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Items",
+    "path": "folders/Objects/Items.yy",
   },
 }

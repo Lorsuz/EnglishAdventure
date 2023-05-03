@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_enemy",
-  "spriteId": {
-    "name": "sprEnemy",
-    "path": "sprites/sprEnemy/sprEnemy.yy",
-  },
+  "name": "objItemLifeParent",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
@@ -28,7 +25,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Parents",
+    "path": "folders/Objects/Parents.yy",
   },
 }
