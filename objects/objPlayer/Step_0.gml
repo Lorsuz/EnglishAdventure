@@ -10,7 +10,7 @@ image_speed = 1
 key_right = keyboard_check(ord("D"))
 key_left = keyboard_check(ord("A"))
 key_jump = keyboard_check(ord("W"))
-global.key_interaction = keyboard_check_pressed(ord("F"))
+global.key_interaction = keyboard_check_pressed(vk_space)
 global.keyAttack = keyboard_check_pressed(vk_enter)
 #endregion
 
@@ -18,7 +18,7 @@ global.keyAttack = keyboard_check_pressed(vk_enter)
 var resultantForce = key_right - key_left
 speedX = resultantForce * speedEntity
 speedY += gravityGeral
-if (speedX != 0) image_xscale = sign(speedX)
+if (speedX != 0) image_xscale = sign(resultantForce)*2
 if(place_meeting(x+speedX, y, objCollider)){
 	while(!place_meeting(x+sign(speedX), y, objCollider)){
 		x += sign(speedX)
@@ -42,10 +42,10 @@ if(place_meeting(x, y+1, objCollider)) and key_jump{
 
 #region SPRITES
 if(speedX != 0){
-		sprite_index = spr_player_run	
+		sprite_index = sprPlayerRun
 
 }else{
-		sprite_index = spr_player_idle
+		sprite_index = sprPlayerIdle
 }
 #endregion
 
