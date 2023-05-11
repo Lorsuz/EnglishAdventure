@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "objNPCjammes",
   "spriteId": {
-    "name": "sprNPC",
-    "path": "sprites/sprNPC/sprNPC.yy",
+    "name": "sprEnemy",
+    "path": "sprites/sprEnemy/sprEnemy.yy",
   },
   "solid": false,
   "visible": true,

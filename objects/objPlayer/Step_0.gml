@@ -17,8 +17,7 @@ global.keyAttack = keyboard_check_pressed(vk_enter)
 #region MOVIMENTAÇÃO
 var resultantForce = key_right - key_left
 speedX = resultantForce * speedEntity
-speedY += gravityGeral
-if (speedX != 0) image_xscale = sign(resultantForce)*2
+if (speedX != 0) image_xscale = sign(resultantForce)*3
 if(place_meeting(x+speedX, y, objCollider)){
 	while(!place_meeting(x+sign(speedX), y, objCollider)){
 		x += sign(speedX)
@@ -26,14 +25,14 @@ if(place_meeting(x+speedX, y, objCollider)){
 	speedX = 0
 }
 x += speedX
-if(place_meeting(x, y+speedY, objCollider)){
-	while(!place_meeting(x, y+sign(speedY), objCollider)){
-		y += sign(speedY)
-	}
-	speedY = 0
-}
+speedY += gravityGeral
 
-y += speedY
+if(place_meeting(x, y+speedY, objCollider)){
+	speedY=0
+		
+}else{
+	y+=speedY
+}
 
 if(place_meeting(x, y+1, objCollider)) and key_jump{
 	speedY -= JumpForce
@@ -56,7 +55,9 @@ if(global.life = 0) room_goto(rmGameOver)
 #region DIALOGO
 
 if(distance_to_object(objNPCsParent) <= 10){
-	if(global.key_interaction and not instance_exists(objChat)){
+	//if(global.key_interaction and not instance_exists(objChat)){
+	if(not instance_exists(objChat)){
+
 		var npc = instance_nearest(x, y, objNPCsParent)
 		var chat = instance_create_layer(x, y, "ChatBox", objChat)
 		chat.nameNPC = npc.nameNPC

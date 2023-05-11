@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "objEnemy",
+  "name": "Object15",
   "spriteId": {
-    "name": "sprNPC",
-    "path": "sprites/sprNPC/sprNPC.yy",
+    "name": "Sprite19",
+    "path": "sprites/Sprite19/Sprite19.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,13 +24,11 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "NPCs",
-    "path": "folders/Objects/NPCs.yy",
+    "name": "Items",
+    "path": "folders/Objects/Items.yy",
   },
 }
