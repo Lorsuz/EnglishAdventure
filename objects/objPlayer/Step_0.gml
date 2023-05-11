@@ -57,14 +57,13 @@ if(global.life = 0) room_goto(rmGameOver)
 if(distance_to_object(objNPCsParent) <= 10){
 	//if(global.key_interaction and not instance_exists(objChat)){
 	if(not instance_exists(objChat)){
-
 		var npc = instance_nearest(x, y, objNPCsParent)
 		var chat = instance_create_layer(x, y, "ChatBox", objChat)
 		chat.nameNPC = npc.nameNPC
 	}
 }
 
-if(distance_to_object(objNPCsParent) >= 20 and instance_exists(objChat)){
+if(distance_to_object(objNPCsParent) >= 10 and instance_exists(objChat)){
 	instance_destroy(objChat)
 }
 
